@@ -7,7 +7,10 @@
 
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.image.Image?>
-<BorderPane style="-fx-background-color: black;" stylesheets="@/Stylings/ListViewStyle.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.shape.Rectangle?>
+<BorderPane id="mainPane" stylesheets="@/Stylings/ListViewStyle.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
 <!--    <ImageView>-->
 <!--        <Image url="@/Stylings/Background.jpg"></Image>-->
 <!--    </ImageView>-->
@@ -16,10 +19,22 @@
 
             <ListView id="menu" fx:id="MenuList" prefHeight="660.5" prefWidth="248.0" stylesheets="@../Stylings/ListViewStyle.css">
                 <Button id="logo" text="LOGOOOOOOOOO" style="-fx-text-fill: transparent;"/>
-                <Button text="HOME" />
-                <Button text="OPTIONS" />
-                <Button text="ABOUT" />
-                <Button text="HELP" />
+                <HBox>
+                    <Rectangle height="50.0" width="15.0"/>
+                    <Label text="HOME"></Label>
+                </HBox>
+                <HBox>
+                    <Rectangle height="50.0" width="15.0"/>
+                    <Label text="OPTIONS"></Label>
+                </HBox>
+                <HBox>
+                    <Rectangle height="50.0" width="15.0"/>
+                    <Label text="ABOUT"></Label>
+                </HBox>
+                <HBox>
+                    <Rectangle height="50.0" width="15.0"/>
+                    <Label text="HELP"></Label>
+                </HBox>
             </ListView>
         </VBox>
     </left>

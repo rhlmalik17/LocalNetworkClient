@@ -12,7 +12,7 @@
     -fx-cursor: hand;
 }
 #menu .list-cell:hover{
-    -fx-border-color: white;
+    /*-fx-border-color: white;*/
 }
 .label{
     -fx-text-fill: white;
@@ -30,5 +30,23 @@
     -fx-background-size: 100%;
     -fx-background-repeat: no-repeat;
     -fx-background-position: center;
-    
+}
+#menu .list-cell:hover .label{
+    -fx-effect: dropshadow(gaussian, whitesmoke, 5, 0.4, 0, 0);
+}
+
+#mainPane{
+    -fx-background-color: black;
+}
+#menu .label{
+    -fx-padding: 50px;
+    -fx-text-fill: white;
+    -fx-font: 15px 'Architects Daughter', cursive;
+    -fx-background-color: transparent;
+}
+#menu .list-cell:selected Rectangle{
+    -fx-arc-height: 10px;
+    -fx-arc-width: 10px;
+    -fx-fill: white;
+    -fx-translate-y: 40px;
 }
